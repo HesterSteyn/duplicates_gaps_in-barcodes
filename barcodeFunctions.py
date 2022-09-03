@@ -45,7 +45,7 @@ for i in range(len(uniquebarcodes)):
         slice_barcode.append(int(uniquebarcodes[i][3:10]))
     except:
         pass
-print(slice_barcode[0:200])    
+#print(slice_barcode[0:200])    
 
 #!!!Missing elements from the list(not working - return 44 million records)
 # res = []
@@ -71,11 +71,11 @@ print(missingbarcodes[0:200])
 print(len(missingbarcodes))
 
 # !!!Does not work  - error message: "cannot import name 'map' from 'itertools' (unknown location)"
-from itertools import map, chain
-from operator import sub
-print (list(chain.from_iterable((slice_bacode[i] + d for d in xrange(1, diff))
-    for i, diff in enumerate(map(sub, slice_barcode[1:], slice_barcode))
-        if diff > 1)))
+# from itertools import map, chain
+# from operator import sub
+# print (list(chain.from_iterable((slice_barcode[i] + d for d in xrange(1, diff))
+#     for i, diff in enumerate(map(sub, slice_barcode[1:], slice_barcode))
+#         if diff > 1)))
 
 
 
