@@ -1,4 +1,4 @@
-from duplicateBarcodes import readCSV
+from duplicatesAndGapsInBarcodes import readCSV
 from os import path
 
 file = r'NHBarcodes.CSV'
