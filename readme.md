@@ -1,6 +1,6 @@
 #DUPLICATES_GAPS_IN_BARCODES
 
-##
-Finds duplicates and gaps (numeric part) in list of barcodes
+Finds duplicates and gaps (in numeric part) in list of barcodes
 
-Filename, -path and fieldnames are set in and code is run from script.py
+Change filenames, -path and fieldnames in script.py
+Run code from script.py
