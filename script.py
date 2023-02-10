@@ -2,9 +2,9 @@ from duplicatesAndGapsInBarcodes import listDuplicateBarcodes, gap_List, readCSV
 from os import path
 
 #read CSV
-filename = 'PREBarcodesBODATSASep2022.csv'
+filename = 'PRE_Barcodes_Nov2022OpenRefine.csv'
 filepath = r'C:\NSCFTraining\PythonScripts'
-fieldname = 'Barcode'
+fieldname = 'SpecimenBarcode'
 results = readCSV(path.join(filepath,filename), fieldname)
 
 #determine duplicate barcodes
