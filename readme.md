@@ -1,4 +1,4 @@
-#DUPLICATES_GAPS_IN_BARCODES
+# DUPLICATES_GAPS_IN_BARCODES
 
 Finds duplicates and gaps (in numeric part) in list of barcodes
 
