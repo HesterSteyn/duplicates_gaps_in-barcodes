@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import re
 import csv
 
 
@@ -35,14 +36,16 @@ def gap_List(barcodesList):
     numericalsInBarcode = []
     for barcode in uniqueBarcodes:
         try:
-            numericalsInBarcode.append(int(barcode[3:10]))
+            num = re.findall('(\d+)', barcode)[0]
+            numericalsInBarcode.append(num)
+            #numericalsInBarcode.append(int(barcode[3:10]))
         except:
             pass
     #Finding missing integers in list
     uniqueBarcodes = None
     gaps = []
     numericalsInBarcode.sort()
-    fullList = range(numericalsInBarcode[0], numericalsInBarcode[-1]+1) 
+    fullList = range(numericalsInBarcode[0], numericalsInBarcode[-1]+1)
     numericalsInBarcode = set(numericalsInBarcode)
     for i in fullList:
         if i not in numericalsInBarcode:
