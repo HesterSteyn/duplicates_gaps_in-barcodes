@@ -36,9 +36,9 @@ def gap_List(barcodesList):
     numericalsInBarcode = []
     for barcode in uniqueBarcodes:
         try:
-            num = re.findall('(\d+)', barcode)[0]
+            num = int(re.findall('(\d+)', barcode)[0])
             numericalsInBarcode.append(num)
-            #numericalsInBarcode.append(int(barcode[3:10]))
+            
         except:
             pass
     #Finding missing integers in list
